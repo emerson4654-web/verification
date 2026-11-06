@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e1b2e">
+  <title>Cadastrar conta Roblox | EB</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="shell narrow">
+    <header class="topbar"><div class="brand-mark">EB</div><div><strong>EXÉRCITO BRASILEIRO</strong><span>Vinculação de conta Roblox</span></div></header>
+    <section class="card form-card">
+      <div class="eyebrow">CADASTRO SEGURO</div>
+      <h1>Vincule sua conta Roblox</h1>
+      <p>Este cadastro está vinculado ao usuário Discord que solicitou o link. Não compartilhe o endereço com ninguém.</p>
+      <div id="loading" class="notice">Carregando seu código individual...</div>
+      <div id="registration" hidden>
+        <label for="code">Seu código de verificação</label>
+        <div class="code-row"><code id="code">---</code><button type="button" id="copyCode" class="secondary">Copiar código</button></div>
+        <ol>
+          <li>Abra seu perfil no Roblox.</li>
+          <li>Edite a descrição/biografia e cole o código acima.</li>
+          <li>Salve a alteração e volte para esta página.</li>
+        </ol>
+        <form id="verifyForm">
+          <label for="username">Nome de usuário Roblox</label>
+          <input id="username" name="username" autocomplete="off" minlength="3" maxlength="20" placeholder="Ex.: jogador123" required>
+          <button type="submit" class="primary">Confirmar minha conta</button>
+        </form>
+      </div>
+      <div id="result" class="result" role="status" aria-live="polite"></div>
+      <a class="back-link" href="/">Voltar ao portal</a>
+    </section>
+    <footer>O sistema confirma o código na biografia pública do Roblox. Sua senha nunca é solicitada.</footer>
+  </main>
+  <script src="/cadastro.js" defer></script>
+</body>
+</html>
